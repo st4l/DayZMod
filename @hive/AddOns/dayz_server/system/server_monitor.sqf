@@ -1,4 +1,5 @@
 []execVM "\z\addons\dayz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
+//[]execVM "gcam\gcam.sqf";
 
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
@@ -134,7 +135,11 @@ diag_log "HIVE: Starting";
 						_position = ([(getPosATL _object),0,100,10,0,500,0] call BIS_fnc_findSafePos);
 						_object setPosATL _position;
 					};
-					_id = _object spawn fnc_vehicleEventHandler;				
+					//_id = _object spawn fnc_vehicleEventHandler;
+				//_object addEventHandler ["HandleDamage", { _this call fnc_usec_damageVehicle }];
+				_object addEventHandler ["Killed", { _this call vehicle_handleKilled }];
+				_object addEventHandler ["GetOut", { _this call vehicle_handleInteract }];
+				_object addEventHandler ["GetIn", { _this call vehicle_handleInteract }];				
 				};
 
 				//Monitor the object
