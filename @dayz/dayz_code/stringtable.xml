@@ -383,12 +383,6 @@
         <German>That tent is already being packed.</German>
         <Russian>Taht tent is already being packed.</Russian>
       </Key>
-
-
-
-
-
-
 		<Key ID="str_player_studybody">
 			<Original>His name was %1, it appears he died from %2</Original>
 			<English>His name was %1, it appears he died from %2</English>
