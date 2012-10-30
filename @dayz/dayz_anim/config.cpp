@@ -1706,7 +1706,7 @@ class CfgVehicles {
 	class Mi17_medevac_Ins: Banned {};
 	class Mi17_medevac_CDF: Banned {};
 	class Mi17_medevac_RU: Banned {};
-	class Mi17_Civilian: Banned {};
+	//class Mi17_Civilian: Banned {};
 	class Fort_Nest_M240: Banned {};
 	class SeaFox_EP1: Banned {};
 	class SeaFox_AllwaysEnemy_EP1: Banned {};
@@ -1789,7 +1789,7 @@ class CfgVehicles {
 	class LandRover_SPG9_TK_INS_EP1: Banned {};
 	class LandRover_SPG9_TK_EP1: Banned {};
 	//class S1203_TK_CIV_EP1: Banned {};
-	class S1203_ambulance_EP1: Banned {};
+	//class S1203_ambulance_EP1: Banned {};
 	class MAZ_543_SCUD_TK_EP1: Banned {};
 	class M1126_ICV_M2_EP1: Banned {};
 	class M1126_ICV_mk19_EP1: Banned {};
@@ -1824,7 +1824,7 @@ class CfgVehicles {
 	class UH1Y: Banned {};
 	class UH1Y_cutscene: Banned {};
 	class Su34: Banned {};
-	class UH60_wreck_EP1: Banned {};
+	//class UH60_wreck_EP1: Banned {};
 	class WarfareSalvageTruck_USMC: Banned {};
 	class WarfareSupplyTruck_USMC: Banned {};
 	class WarfareReammoTruck_USMC: Banned {};
@@ -1924,9 +1924,9 @@ class CfgVehicles {
 	class AH6J_EP1: Banned {};
 	class AH6X_EP1: Banned {};
 	class MH6J_EP1: Banned {};
-	class An2_1_TK_CIV_EP1: Banned {};
-	class An2_2_TK_CIV_EP1: Banned {};
-	class An2_TK_EP1: Banned {};
+	//class An2_1_TK_CIV_EP1: Banned {};
+	//class An2_2_TK_CIV_EP1: Banned {};
+	//class An2_TK_EP1: Banned {};
 	class CH_47F_EP1: Banned {};
 	class Steerable_Parachute_EP1: Banned {};
 	class Mi17_UN_CDF_EP1: Banned {};
