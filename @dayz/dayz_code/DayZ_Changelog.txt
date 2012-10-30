@@ -44,6 +44,8 @@ HOTFIX : 27th OCTOBER 2012
 		* [NEW] 	combat 30 sec timer.
 		* [UPDATED] 	ItemWire reduced from 0.06 to 0.01
 		* [UPDATED] 	PartEngine updated from 0.01 to 0.06
+		* [UPDATED] 	Version info is now displayed correct
+
 
 	Server.pbo
 		* [FIXED] 	Object Gear syncs happen based on radius not just on menu.
