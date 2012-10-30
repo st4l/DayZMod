@@ -2069,7 +2069,7 @@ class CfgVehicles {
 	class T55_TK_GUE_EP1: Banned {};
 	class SUV_PMC_BAF: Banned {};
 	class BAF_ATV_D: Banned {};
-	class BAF_Offroad_D: Banned {};
+	//class BAF_Offroad_D: Banned {};
 	class BAF_Jackal2_L2A1_D: Banned {};
 	class BAF_Jackal2_GMG_D: Banned {};
 	class BAF_ATV_W: Banned {};
