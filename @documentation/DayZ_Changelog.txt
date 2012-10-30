@@ -1,3 +1,12 @@
+HOTFIX : TBO 2012
+
+	Affected addons:
+		* 
+		* 
+
+	Community Changelog:
+
+_____________________________________
 HOTFIX : 31th OCTOBER 2012
 
 	Affected addons:
