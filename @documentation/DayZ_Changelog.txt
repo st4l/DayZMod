@@ -1,7 +1,7 @@
-HOTFIX : 27th OCTOBER 2012
+HOTFIX : 31th OCTOBER 2012
 
 	Affected addons:
-		* dayz_code		1.7.2.*
+		* dayz_code		1.7.3
 		* dayz_server 	(server admins only)
 	
 	Developer's Note: 
@@ -24,11 +24,12 @@ HOTFIX : 27th OCTOBER 2012
 		* [NEW] 	Vehicle repair menus will now let you know the exact item you need to repair on failed repair attempts.
 		* [FIXED] 	Vehicle Damage is now fully working.
 		* [FIXED] 	Vehicle Killed is now in effect fully destroyed vehilces will now set corret in db.
+		* [FIXED] 	Some previously erroneously restricted/banned vehicles will now spawn.
 		* [FIXED] 	Tents Now add and remove from db.
 		* [FIXED] 	Food can no longer be consumed if the player does not have in inventory.
 		* [FIXED] 	water can no longer be consumed if the player does not have in inventory.
 		* [UPDATED] 	Updated UI control.
-		* [NEW] 	Toolbox is now needed for all repiars.
+		* [NEW] 	Toolbox is now needed for all repairs.
 		* [NEW] 	New Combat System If you fire a weapon, someone fires a weapon near you, or a bullet/object impacts near you, then you go into combat.  During combat, "ABORT" is disabled. (Need to look at the effects with high player counts)
 		* [NEW] 	Alt-f4 is now locked and will only open your status menu.
 		* [Fixed] 	No longer possible to drink/eat/pitch a tent/put on clothes/build sand bags/cat wire/hedgehogs/consume medical supplies/free filled water without consuming the item.
