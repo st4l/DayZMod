@@ -49,5 +49,5 @@ if (!isDedicated) then {
 	"changeCharacter"	addPublicVariableEventHandler {(_this select 1) call player_serverModelChange};
 	"dayzSwitch"		addPublicVariableEventHandler {(_this select 1) call server_switchPlayer};
 	"dayzFire"			addPublicVariableEventHandler {nul=(_this select 1) spawn BIS_Effects_Burn};
-	"dayz_combatLog"	addPublicVariableEventHandler {nul=(_this select 1) spawn player_combatLogged};
+	//"dayz_combatLog"	addPublicVariableEventHandler {nul=(_this select 1) spawn player_combatLogged};
 };

@@ -20,9 +20,6 @@ zombie_findOwner =			compile preprocessFileLineNumbers "\z\addons\dayz_server\co
 
 server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
 
-if ( isplayeradmin ) then { diag_log ("Admin Logged in 1"); };
-if ( isadmin ) then { diag_log ("Admin Logged in 2"); };
-
 vehicle_handleInteract = {
 	private["_object"];
 	_object = _this select 0;

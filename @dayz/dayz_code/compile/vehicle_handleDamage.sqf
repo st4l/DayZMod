@@ -19,12 +19,14 @@ if ( _total > 0 ) then {
         _unit setVariable [_strH, _total, true];
         dayzUpdateVehicle = [_unit, "damage"];
 
-        if (isServer) then {
-                if (allowConnection) then {
-                        dayzUpdateVehicle call server_updateObject;
-                };
-        } else {
+		if (isServer) then {
+             if (allowConnection) then {
+                dayzUpdateVehicle call server_updateObject;
+            } else {
                 publicVariable "dayzUpdateVehicle";
+            };
+        } else {
+            publicVariable "dayzUpdateVehicle";
         };
 
 };
