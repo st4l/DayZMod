@@ -1,15 +1,11 @@
-/*
-Rewritten by TeeTime 25.5.2012
-*/
-private["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim"];
+private["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim","_currentCamera"];
 _class 			= _this;
 
 _position 		= getPosATL player;
 _dir 			= getDir player;
 _currentAnim 	= animationState player;
+//_currentCamera	= cameraView;
 
-//Secure Player for Transformation
-	player setPosATL dayz_spawnPos;
 
 //Get PlayerID
 private ["_playerUID"];
@@ -46,12 +42,13 @@ private ["_weapons","_magazines","_primweapon","_secweapon"];
 		_weapons = _weapons + [_secweapon];
 	};
 	
-	if(count _magazines == 0) then {
-		_magazines = magazines player;
-	};
+//	if(count _magazines == 0) then {
+//		_magazines = magazines player;
+//	};
 
 //BackUp Backpack
 private ["_newBackpackType","_backpackWpn","_backpackMag"];
+	dayz_myBackpack = unitBackpack player;
 	_newBackpackType = (typeOf dayz_myBackpack);
 	if(_newBackpackType != "") then {
 		_backpackWpn = getWeaponCargo unitBackpack player;
@@ -64,13 +61,16 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	if (count _muzzles > 1) then {
 		_currentWpn = currentMuzzle player;
 	};
-	
+
 //Debug Message
 	diag_log "Attempting to switch model";
 	diag_log str(_weapons);
 	diag_log str(_magazines);
 	diag_log (str(_backpackWpn));
 	diag_log (str(_backpackMag));
+
+//Secure Player for Transformation
+	player setPosATL dayz_spawnPos;
 
 //BackUp Player Object
 	_oldUnit = player;
@@ -83,6 +83,9 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	//[player] joinSilent grpNull;
 	_group 		= createGroup west;
 	_newUnit 	= _group createUnit [_class,dayz_spawnPos,[],0,"NONE"];
+
+	_newUnit 	setPosATL _position;
+	_newUnit 	setDir _dir;
 
 //Clear New Character
 	{_newUnit removeMagazine _x;} forEach  magazines _newUnit;
@@ -100,19 +103,6 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	} forEach _weapons;
 
 //Check and Compare it
-	if(str(_magazines) != str(magazines _newUnit)) then {
-		//Get Differecnce
-		{
-			_magazines = _magazines - [_x];
-		} forEach (magazines _newUnit);
-		
-		//Add the Missing
-		{
-			_newUnit addMagazine _x;
-			//sleep 0.2;
-		} forEach _magazines;
-	};
-	
 	if(str(_weapons) != str(weapons _newUnit)) then {
 		//Get Differecnce
 		{
@@ -172,13 +162,11 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 //Debug Message
 	diag_log "Swichtable Unit Created. Equipment:";
 	diag_log str(weapons _newUnit);
-	diag_log str(magazines _newUnit);	
+	diag_log str(magazines _newUnit);
 	diag_log str(getWeaponCargo unitBackpack _newUnit);
 	diag_log str(getMagazineCargo unitBackpack _newUnit);
 
 //Make New Unit Playable
-	_newUnit setPosATL _position;
-	_newUnit setDir _dir;
 	addSwitchableUnit _newUnit;
 	setPlayable _newUnit;
 	selectPlayer _newUnit;
@@ -197,10 +185,16 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	};
 
 //Move player inside
-	
+
+//	player switchCamera = _currentCamera;
 	if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 	[objNull, player, rSwitchMove,_currentAnim] call RE;
 	//dayz_originalPlayer attachTo [_newUnit];
 	player disableConversation true;
 	
 	player setVariable ["bodyName",dayz_playerName,true];
+
+	_playerUID=getPlayerUID player;
+	_playerObjName = format["player%1",_playerUID];
+	call compile format["player%1 = player;",_playerUID];
+	publicVariable _playerObjName;

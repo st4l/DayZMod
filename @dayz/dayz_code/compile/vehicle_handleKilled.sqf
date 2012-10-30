@@ -15,7 +15,7 @@ _hitPoints = _unit call vehicle_getHitpoints;
 	_unit setVariable [_selection, 1, true];
 } forEach _hitPoints;
 
-dayzUpdateVehicle = [_unit, "damage"];
+dayzUpdateVehicle = [_unit, "damage", true];
 
 if (isServer) then {
 	if (allowConnection) then {
@@ -24,3 +24,8 @@ if (isServer) then {
 } else {
 	publicVariable "dayzUpdateVehicle";
 };
+
+_unit removeAllEventHandlers "HandleDamage";
+_unit removeAllEventHandlers "Killed";
+_unit removeAllEventHandlers "GetIn";
+_unit removeAllEventHandlers "GetOut";

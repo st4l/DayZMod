@@ -8,7 +8,7 @@ _type = typeOf _vehicle;
 
 //
 _hasToolbox = 	"ItemToolbox" in items player;
-_section = _part in magazines player
+_section = _part in magazines player;
 
 //moving this here because we need to know which part needed if we don't have it
 _nameType = 		getText(configFile >> "cfgVehicles" >> _type >> "displayName");
