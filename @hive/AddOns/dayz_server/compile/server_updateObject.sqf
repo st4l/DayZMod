@@ -96,6 +96,7 @@ switch (_type) do {
 			_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
 			if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
 		} forEach _hitpoints;
+			
 		_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
 		diag_log ("HIVE: WRITE: "+ str(_key));
 		_key call server_hiveWrite;

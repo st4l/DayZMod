@@ -134,11 +134,7 @@ diag_log "HIVE: Starting";
 						_position = ([(getPosATL _object),0,100,10,0,500,0] call BIS_fnc_findSafePos);
 						_object setPosATL _position;
 					};
-					//_id = _object spawn fnc_vehicleEventHandler;
-				//_object addEventHandler ["HandleDamage", { _this call vehicle_handleDamage }];
-				//_object addEventHandler ["Killed", { _this call vehicle_handleKilled }];
-				_object addEventHandler ["GetOut", { _this call vehicle_handleInteract }];
-				_object addEventHandler ["GetIn", { _this call vehicle_handleInteract }];				
+					_id = _object spawn fnc_vehicleEventHandler;			
 				};
 
 				//Monitor the object
