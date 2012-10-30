@@ -48,8 +48,8 @@ Client Side:
     * [NEW]  Combat 30 sec timer on all combat actions.
 
 Server.pbo:
-    * [NEW] HiveEXT.dll now replaced with our new version.
-    * [NEW] Official Hive login is now hard coded into the .dll
+    * [NEW] HiveEXT.dll updated with new optimized version that supports both private and public hive.
+    * [NEW] Official public Hive login is now hard coded into the .dll (Outgoing TCP port 80 and 3306 has to be allowed to use public hive)
     * [NEW] New Hive can now set ingame time to custom, local(local server time), static
     * [FIXED]  Object Gear syncs happen based on radius not just on menu.
     * [FIXED]  Vehicle Position is now updated with client position.
