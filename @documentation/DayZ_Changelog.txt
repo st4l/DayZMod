@@ -1,10 +1,24 @@
-HOTFIX : TBO 2012
+Affected addons:
+    * dayz_code     1.7.3.*
 
-	Affected addons:
-		* 
-		* 
+Developer's Note: 
+    * 
 
-	Community Changelog:
+Developer Changelog:
+    *
+
+Community Notes: 
+    * Current Changelog not final Changelog
+
+Community Changelog:
+Client Side:
+    * [NEW]  class Mi17_Civilian Now Unbanned
+    * [NEW]  S1203_ambulance_EP1 Now Unbanned
+    * [NEW]  UH60_wreck_EP1 Now Unbanned
+    * [NEW]  An2_1_TK_CIV_EP1 Now Unbanned
+    * [NEW]  An2_2_TK_CIV_EP1 Now Unbanned
+    * [NEW]  An2_TK_EP1 Now Unbanned
+    * [NEW] BAF_Offroad_D Now Unbanned
 
 _____________________________________
 HOTFIX : 31th OCTOBER 2012
