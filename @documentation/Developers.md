@@ -15,7 +15,7 @@ DayZ Community Developers
 * Tansien
 * Killzone_kid
 * Stapo
-* Shumrak
+* Sumrak
 * Pwnoz0r
 * R4Z0R49
 * Rajko
