@@ -1,27 +1,25 @@
-Affected addons:
-    * dayz_code     1.7.3.*
 
-Developer's Note: 
-    * 
+### HOTFIX : TBD
 
-Developer Changelog:
-    *
+	Affected addons:
+		* dayz_code		1.7.3.*
 
-Community Notes: 
-    * Current Changelog not final Changelog
+	Developer's Note:
+		* 
 
-Community Changelog:
-Client Side:
-    * [NEW]  class Mi17_Civilian Now Unbanned
-    * [NEW]  S1203_ambulance_EP1 Now Unbanned
-    * [NEW]  UH60_wreck_EP1 Now Unbanned
-    * [NEW]  An2_1_TK_CIV_EP1 Now Unbanned
-    * [NEW]  An2_2_TK_CIV_EP1 Now Unbanned
-    * [NEW]  An2_TK_EP1 Now Unbanned
-    * [NEW] BAF_Offroad_D Now Unbanned
+	Community Changelog:
+		Client:
+		* [NEW]		class Mi17_Civilian Now Unbanned
+		* [NEW]		S1203_ambulance_EP1 Now Unbanned
+		* [NEW]		UH60_wreck_EP1 Now Unbanned
+		* [NEW]		An2_1_TK_CIV_EP1 Now Unbanned
+		* [NEW]		An2_2_TK_CIV_EP1 Now Unbanned
+		* [NEW]		An2_TK_EP1 Now Unbanned
+		* [NEW]		BAF_Offroad_D Now Unbanned
 
 _____________________________________
-HOTFIX : 31th OCTOBER 2012
+
+### UPDATE : 31th OCTOBER 2012
 
 	Affected addons:
 		* dayz_code		1.7.3
@@ -29,47 +27,48 @@ HOTFIX : 31th OCTOBER 2012
 	
 
 	Community Changelog:
-Client Side:
-    * [NEW]  Tents can no longer be placed on concrete.
-    * [FIXED]  Building checks for tent placement (No longer place tents in buildings).
-    * [FIXED]  Tents now are one click place.
-    * [FIXED]  Fixed function for checking if in buildings.
-    * [UPDATED]  Vehicle repair menus now all replaced.
-    * [NEW]  Vehicle menus now list all damaged parts no matter if you have the item or not.
-    * [NEW]  Vehicle repair menus will now let you know the exact item you need to repair on failed repair attempts.
-    * [FIXED]  Vehicle Damage is now fully working.
-    * [FIXED]  Vehicle Killed is now in effect fully destroyed vehicles will now set correct in db.
-    * [FIXED]  Tents Now add and remove from db.
-    * [FIXED]  Food can no longer be consumed if the player does not have in inventory.
-    * [FIXED]  water can no longer be consumed if the player does not have in inventory.
-    * [UPDATED]  Updated UI control bug.
-    * [NEW]  Toolbox is now needed for all repairs.
-    * [NEW]  Alt-f4 is now locked and will only open your status menu.
-    * [Fixed]  No longer possible to drink/eat/pitch a tent/put on clothes/build sand bags/cat wire/hedgehogs/consume medical supplies/free filled water without consuming the item.
-    * [FIXED]  No longer possible to create axes out of thin air if you already have one
-    * [FIXED]  Switching skins no longer repairs pain shakes/broken legs/resets/dupes/screws/resets ammo
-    * [FIXED]  Duping no longer possible through zombie corpses/etc
-    * [FIXED]  It should now be impossible for a new players spawns to spawn unconscious.
-    * [FIXED]  You can no longer cook infinite free meat from camp fires
-    * [FIXED]  Survivors should no longer pickup a single item at the same time and both receive it.
-    * [FIXED]  You can no longer generate multiple tents while packing up a deployed tent.
-    * [FIXED]  You can no longer change clothes/eat/drink/etc. while in a vehicle
-    * [NEW]  combat 30 sec timer on all combat actions.
-    * [UPDATED]  ItemWire reduced from 0.06 to 0.01
-    * [UPDATED]  PartEngine updated from 0.01 to 0.06
-    * [UPDATED]  Version info is now displayed correct
-    * [NEW]  New Combat System If you fire a weapon, then you go into combat.  During combat, "ABORT" is disabled. (Need to look at the effects with high player counts)
-    * [NEW]  Combat 30 sec timer on all combat actions.
+		Client:
+		* [NEW]		Tents can no longer be placed on concrete.
+		* [FIXED]	Building checks for tent placement (No longer place tents in buildings).
+		* [FIXED]	Tents now are one click place.
+		* [FIXED]	Fixed function for checking if in buildings.
+		* [UPDATED]	Vehicle repair menus now all replaced.
+		* [NEW]		Vehicle menus now list all damaged parts no matter if you have the item or not.
+		* [NEW]		Vehicle repair menus will now let you know the exact item you need to repair on failed repair attempts.
+		* [FIXED]	Vehicle Damage is now fully working.
+		* [FIXED]	Vehicle Killed is now in effect fully destroyed vehicles will now set correct in db.
+		* [FIXED]	Tents Now add and remove from db.
+		* [FIXED]	Food can no longer be consumed if the player does not have in inventory.
+		* [FIXED]	water can no longer be consumed if the player does not have in inventory.
+		* [UPDATED]	Updated UI control bug.
+		* [NEW]		Toolbox is now needed for all repairs.
+		* [NEW]		Alt-f4 is now locked and will only open your status menu.
+		* [Fixed]	No longer possible to drink/eat/pitch a tent/put on clothes/build sand bags/cat wire/hedgehogs/consume medical supplies/free filled water without consuming the item.
+		* [FIXED]	No longer possible to create axes out of thin air if you already have one
+		* [FIXED]	Switching skins no longer repairs pain shakes/broken legs/resets/dupes/screws/resets ammo
+		* [FIXED]	Duping no longer possible through zombie corpses/etc
+		* [FIXED]	It should now be impossible for a new players spawns to spawn unconscious.
+		* [FIXED]	You can no longer cook infinite free meat from camp fires
+		* [FIXED]	Survivors should no longer pickup a single item at the same time and both receive it.
+		* [FIXED]	You can no longer generate multiple tents while packing up a deployed tent.
+		* [FIXED]	You can no longer change clothes/eat/drink/etc. while in a vehicle
+		* [NEW]		combat 30 sec timer on all combat actions.
+		* [UPDATED]	ItemWire reduced from 0.06 to 0.01
+		* [UPDATED]	PartEngine updated from 0.01 to 0.06
+		* [UPDATED]	Version info is now displayed correct
+		* [NEW]		New Combat System If you fire a weapon, then you go into combat.  During combat, "ABORT" is disabled. (Need to look at the effects with high player counts)
+		* [NEW]		Combat 30 sec timer on all combat actions.
 
-Server.pbo:
-    * [NEW] HiveEXT.dll updated with new optimized version that supports both private and public hive.
-    * [NEW] Official public Hive login is now hard coded into the .dll (Outgoing TCP port 80 and 3306 has to be allowed to use public hive)
-    * [NEW] New Hive can now set ingame time to custom, local(local server time), static
-    * [FIXED]  Object Gear syncs happen based on radius not just on menu.
-    * [FIXED]  Vehicle Position is now updated with client position.
-    * [FIXED]  Vehicles save fuel properly
+		Server:
+		* [NEW]		HiveEXT.dll updated with new optimized version that supports both private and public hive.
+		* [NEW]		Official public Hive login is now hard coded into the .dll (Outgoing TCP port 80 and 3306 has to be allowed to use public hive)
+		* [NEW]		New Hive can now set ingame time to custom, local(local server time), static
+		* [FIXED]	Object Gear syncs happen based on radius not just on menu.
+		* [FIXED]	Vehicle Position is now updated with client position.
+		* [FIXED]	Vehicles save fuel properly
 _____________________________________
-HOTFIX : 6 SEPTEMBER 2012
+
+### HOTFIX : 6 SEPTEMBER 2012
 
 	Affected addons:
 		* dayz 			1.something.somethingelse
@@ -87,7 +86,7 @@ HOTFIX : 6 SEPTEMBER 2012
 		* [FIXED] 	Converting between magazine types resets ammo count (Now only contains previous number of rounds)
 _____________________________________
 
-HOTFIX : 8 AUGUST 2012
+### HOTFIX : 8 AUGUST 2012
 
 	Affected addons:
 		* dayz_code		1.7.2.5
@@ -105,7 +104,7 @@ HOTFIX : 8 AUGUST 2012
 		* [FIXED] 	Graphical glitches with dead bodies (Rebinarized file should no longer produce graphical artifacts)
 _____________________________________
 
-HOTFIX : 26 JULY 2012
+### HOTFIX : 26 JULY 2012
 
 	Affected addons:
 		* dayz_code		1.7.2.4
@@ -133,7 +132,7 @@ HOTFIX : 26 JULY 2012
 		* [NEW]		Radar removed from helicopter (UH1H will be added back to vehicle spawns)
 ______________________________________
 
-UPDATE : 13 JULY 2012
+### UPDATE : 13 JULY 2012
 
 	Affected addons:
 		* dayz_code		1.7.2.2
@@ -153,7 +152,7 @@ UPDATE : 13 JULY 2012
 		* [FIXED]	Bear traps not appearing for spawn (low spawn)
 ______________________________________
 
-HOTFIX : 10 JULY 2012
+### HOTFIX : 10 JULY 2012
 
 	Affected addons:
 		* dayz_code		1.7.2.1
@@ -169,7 +168,7 @@ HOTFIX : 10 JULY 2012
 		* [FIXED]	Pressing ALT key caused spamming of server sync ( No longer spams for sync'ing a character )
 ______________________________________
 
-UPDATE : 9 JULY 2012
+### UPDATE : 9 JULY 2012
 
 	Affected addons:
 		* dayz_code		1.7.2
@@ -206,7 +205,7 @@ UPDATE : 9 JULY 2012
 	
 ______________________________________
 
-HOTFIX : 20 JUNE 2012
+### HOTFIX : 20 JUNE 2012
 
 	Affected addons:
 		* dayz_code		1.7.1.5
@@ -237,7 +236,7 @@ HOTFIX : 20 JUNE 2012
 		* [FIXED]	Melee weapon sounds non-existent/terrible (now has placeholder sounds)
 ______________________________________
 
-HOTFIX : 19 JUNE 2012
+### HOTFIX : 19 JUNE 2012
 
 	Affected addons:
 		* dayz_code		1.7.1.4
@@ -247,7 +246,7 @@ HOTFIX : 19 JUNE 2012
 		* [FIXED]	Performance issue with equipment proxies (improves FPS)
 ______________________________________
 
-HOTFIX : 19 JUNE 2012
+### HOTFIX : 19 JUNE 2012
 
 	Affected addons:
 		* dayz_code		1.7.1.3
@@ -277,7 +276,7 @@ HOTFIX : 19 JUNE 2012
 		* [FIXED]	"Fus ro dah" melee (now should be the correct release files)
 ______________________________________
 
-HOTFIX : 19 JUNE 2012
+### HOTFIX : 19 JUNE 2012
 
 	Affected addons:
 		* dayz_code		1.7.1.2
@@ -304,7 +303,7 @@ HOTFIX : 19 JUNE 2012
 		* [FIXED]	Gender assignment broken (working correctly)
 ______________________________________
 
-HOTFIX : 17 JUNE 2012
+### HOTFIX : 17 JUNE 2012
 
 	Affected addons:
 		* dayz_code		1.7.1.1
@@ -336,7 +335,7 @@ HOTFIX : 17 JUNE 2012
 		* [FIXED]	Infected will stay in one place after losing line-of-sight (now will loiter)
 ______________________________________
 
-UPDATE : 17 JUNE 2012
+### UPDATE : 17 JUNE 2012
 
 	Community Shout-out this update:
 		www.armaholic.com
@@ -393,7 +392,7 @@ UPDATE : 17 JUNE 2012
 		* [NEW]		DayZ: Now with additional cruelty! Spawn with only a bandage, painkillers, and a torch.
 ______________________________________
 
-UPDATE : 27 MAY 2012
+### UPDATE : 27 MAY 2012
 
 	Affected addons:
 		* dayz_code		1.7.0
@@ -406,7 +405,7 @@ UPDATE : 27 MAY 2012
 		* [NEW]	 	Server Side Architecture completely rewritten
 ______________________________________
 
-HOTFIX : 24 MAY 2012
+### HOTFIX : 24 MAY 2012
 
 	Affected addons:
 		* dayz_code		1.5.8.4
@@ -415,7 +414,7 @@ HOTFIX : 24 MAY 2012
 		* [NEW]	 	Support for more than 1,000,000 characters
 ______________________________________
 
-UPDATE : 27 MAY 2012
+### UPDATE : 27 MAY 2012
 
 	Affected addons:
 		* dayz_code		1.6
