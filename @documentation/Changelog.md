@@ -1,4 +1,3 @@
-
 ### HOTFIX : TBD
 
 	Affected addons:
@@ -58,6 +57,7 @@ _____________________________________
 		* [UPDATED]	Version info is now displayed correct
 		* [NEW]		New Combat System If you fire a weapon, then you go into combat.  During combat, "ABORT" is disabled. (Need to look at the effects with high player counts)
 		* [NEW]		Combat 30 sec timer on all combat actions.
+		* [FIXED]  Zombie death animation is delayed (now it plays instantly)
 
 		Server:
 		* [NEW]		HiveEXT.dll updated with new optimized version that supports both private and public hive.
