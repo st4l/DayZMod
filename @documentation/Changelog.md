@@ -1,4 +1,4 @@
-### HOTFIX : TBD
+### Update: TBD
 
 	Affected addons:
 		* dayz_code		1.7.3.*
@@ -8,13 +8,16 @@
 
 	Community Changelog:
 		Client:
-		* [NEW]		class Mi17_Civilian Now Unbanned
-		* [NEW]		S1203_ambulance_EP1 Now Unbanned
-		* [NEW]		UH60_wreck_EP1 Now Unbanned
-		* [NEW]		An2_1_TK_CIV_EP1 Now Unbanned
-		* [NEW]		An2_2_TK_CIV_EP1 Now Unbanned
-		* [NEW]		An2_TK_EP1 Now Unbanned
-		* [NEW]		BAF_Offroad_D Now Unbanned
+		* [NEW]		class Mi17_Civilian Now Unbanned.
+		* [NEW]		S1203_ambulance_EP1 Now Unbanned.
+		* [NEW]		UH60_wreck_EP1 Now Unbanned.
+		* [NEW]		An2_1_TK_CIV_EP1 Now Unbanned.
+		* [NEW]		An2_2_TK_CIV_EP1 Now Unbanned.
+		* [NEW]		An2_TK_EP1 Now Unbanned.
+		* [NEW]		BAF_Offroad_D Now Unbanned.
+
+		* [Fixed]	Adding checks for female skin humanity/login.
+		* [Fixed]	Adding female skin to variables.
 
 _____________________________________
 
