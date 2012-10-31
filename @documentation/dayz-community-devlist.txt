@@ -1,24 +1,32 @@
-AJ
-Alakakala
-Alby
-Ander
-Dean 'Rocket' Hall * [FIXED]  Zombie death animation is delayed (now it plays instantly)
-f0rt (ashfor03)
-Ayan4m1
-Facoptere
-HumbleUk
-IMF2000
-Tansien
-Killzone_kid
-Stapo
-Shumrak
-Pwnoz0r
-R4Z0R49
-Rajko
-TheLaughingMan
-VRShiva
-Venthos
+DayZ Community Developers
+-------
 
 
-If we missed your name plz let me know on the forums. R4Z0R49
+* AJ (Leadz)
+* Alakakala
+* Alby
+* Ander
+* Dean 'Rocket' Hall
+* f0rt (ashfor03)
+* Ayan4m1
+* Facoptere
+* HumbleUk
+* IMF2000
+* Tansien
+* Killzone_kid
+* Stapo
+* Shumrak
+* Pwnoz0r
+* R4Z0R49
+* Rajko
+* TheLaughingMan
+* VRShiva
+* Venthos
+
+
+Contributing
+------------
+Want to contribute? Or have we missed your name?
+Please contact R4Z0R49 on [http://dayzmod.com/forums/.](http://dayzmod.com/forums/)
+
 
