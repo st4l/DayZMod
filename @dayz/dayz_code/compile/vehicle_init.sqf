@@ -10,7 +10,7 @@ _location = getPosATL _this;
 
 //Assign event handlers
 //_eh1 = _unit addEventHandler ["HandleDamage",{ _this call vehicle_handleDamage }];
-_eh1 = _unit addeventhandler ["HandleDamage",{if (local (_this select 0)) then { _this call set_obj_dmg }}];
+_eh1 = _unit addeventhandler ["HandleDamage",{if (local (_this select 0)) then { _this call vehicle_handleDamage  }}];
 _eh2 = _unit addeventhandler ["Killed",{if (local (_this select 0)) then { _this call vehicle_handleKilled }}];
  
  diag_log format ["set EH %1 for vehicle:%2", _eh1, typeOf _unit ];
