@@ -18,6 +18,7 @@
 		* [NEW]		Fully Removed Save button from action menu.
 		
 		* [UPDATED]	Combat Loging Fired near checks are now limited to 15m radius.
+		* [UPDATED]	Corrected legs and hands fractures they must be set with actual value.
 		
 		* [REMOVED]	Damaged logging to .rpt.
 
