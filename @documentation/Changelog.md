@@ -16,7 +16,7 @@
 		* [NEW]		An2_TK_EP1 Now Unbanned.
 		* [NEW]		BAF_Offroad_D Now Unbanned.
 		* [NEW]		Fully Removed Save button from action menu.
-		* [NEW]     New combat mode icon.
+		* [NEW]     New combat mode icon (G17) thanks Alexander.
 		
 		* [UPDATED]	Combat Loging Fired near checks are now limited to 15m radius.
 		* [UPDATED]	Corrected legs and hands fractures they must be set with actual value.
@@ -29,6 +29,7 @@
 		* [Fixed]	Event Handle for wrecked choppers.
 		* [Fixed]	Event Handle for Vehicles.
 		* [Fixed]	Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
+		* [Fixed]	Debug menu options to no longer show.
 
 _____________________________________
 
