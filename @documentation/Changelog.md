@@ -24,6 +24,8 @@
 		* [Fixed]	Adding checks for female skin humanity/login.
 		* [Fixed]	Adding female skin to variables.
 		* [Fixed]	Fixed Parachute so jumping out of choppers wont kill you.
+		* [Fixed]	Event Handle for wrecked choppers.
+		* [Fixed]	Event Handle for Vehicles.
 
 _____________________________________
 
