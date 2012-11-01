@@ -19,8 +19,6 @@ private["_unit","_magazine","_used","_quantity","_magsNet","_magsWhole","_key","
 	_evType = "";
 	_recordable = false;
 	
-	diag_log ("Distance:  " + str(_distance));
-	
 	// Both the firer and those nearby (<=15m) go into "combat" to prevent ALT-F4
 	_firer setVariable["startcombattimer", 1, true];
 	_listNear = _firer nearEntities [["CAManBase","AllVehicles"],15];
