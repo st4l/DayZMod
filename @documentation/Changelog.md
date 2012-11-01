@@ -16,6 +16,7 @@
 		* [NEW]		An2_TK_EP1 Now Unbanned.
 		* [NEW]		BAF_Offroad_D Now Unbanned.
 		* [NEW]		Fully Removed Save button from action menu.
+		* [NEW]     New combat mode icon.
 		
 		* [UPDATED]	Combat Loging Fired near checks are now limited to 15m radius.
 		* [UPDATED]	Corrected legs and hands fractures they must be set with actual value.
