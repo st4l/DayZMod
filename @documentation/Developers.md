@@ -4,6 +4,7 @@ DayZ Community Developers
 
 * AJ (Leadz)
 * Alakakala
+* Alexander (G17 incombat Icon)
 * Alby
 * Ander
 * Dean 'Rocket' Hall
