@@ -82,7 +82,7 @@ call dayz_resetSelfActions;
 eh_player_killed = player addeventhandler ["FiredNear",{_this call player_weaponFiredNear;} ];
 
 //Combat logging
-_eh_combat_projectilenear = player addEventHandler ["IncomingFire" {_this call player_projectileNear;}];
+_eh_combat_projectilenear = player addEventHandler ["IncomingFire",{_this call player_projectileNear;}];
 //
 [player] call fnc_usec_damageHandle;
 player allowDamage true;
