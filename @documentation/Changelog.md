@@ -18,6 +18,8 @@
 		* [NEW]		Fully Removed Save button from action menu.
 		
 		* [UPDATED]	Combat Loging Fired near checks are now limited to 15m radius.
+		
+		* [REMOVED]	Damaged logging to .rpt.
 
 		* [Fixed]	Adding checks for female skin humanity/login.
 		* [Fixed]	Adding female skin to variables.
