@@ -15,6 +15,7 @@
 		* [NEW]		An2_2_TK_CIV_EP1 Now Unbanned.
 		* [NEW]		An2_TK_EP1 Now Unbanned.
 		* [NEW]		BAF_Offroad_D Now Unbanned.
+		* [NEW]		Fully Removed Save button from action menu.
 		
 		* [UPDATED]	Combat Loging Fired near checks are now limited to 15m radius.
 
