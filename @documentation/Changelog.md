@@ -17,6 +17,7 @@
 		* [NEW]		BAF_Offroad_D Now Unbanned.
 		* [NEW]		Fully Removed Save button from action menu.
 		* [NEW]     New combat mode icon (G17) thanks Alexander.
+		* [NEW]     Dogs are now added and can be controlled.
 		
 		* [UPDATED]	Combat Loging Fired near checks are now limited to 15m radius.
 		* [UPDATED]	Corrected legs and hands fractures they must be set with actual value.
@@ -30,6 +31,26 @@
 		* [Fixed]	Event Handle for Vehicles.
 		* [Fixed]	Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
 		* [Fixed]	Debug menu options to no longer show.
+		
+		Dogs:
+
+			Dogs can be found around the world roaming.
+			Dogs must be taimed using a peace of raw food.
+			Once taimed dogs are able to controlled (This is still limited for now).
+			Once taimed dogs will automatic follow unless told to do somthing else.
+
+			If you dog dies you can gut.
+
+		Basic Controls:
+
+			Sit - Tells your dog to sit.
+			Lie - Tells your dog to lie down.
+			Stay - Tells your dog to stay in location Dogs will get board if left.
+			Track - Tells your dog to find the closest animal within 900m.
+			Call - Calls your dog back. (Cancels all current commands).
+			Attack - Will attempt to attack target on command.
+			
+		Dogs will be limied a great deal to start with as we need to see how they react ingame with you and the world.		
 
 _____________________________________
 
