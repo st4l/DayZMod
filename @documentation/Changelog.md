@@ -26,11 +26,19 @@
 
 			* [Fixed]   Adding checks for female skin humanity/login.
 			* [Fixed]   Adding female skin to variables.
-			* [Fixed]   Fixed Parachute so jumping out of choppers won’t kill you.
+			* [Fixed]   Fixed Parachute so jumping out of choppers won?t kill you.
 			* [Fixed]   Event Handle for wrecked choppers.
 			* [Fixed]   Event Handle for Vehicles.
 			* [Fixed]   Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
 			* [Fixed]   Debug menu options to no longer show.
+
+		Upstream hive (public hive):
+			Adjusted the respawn rates of vehicles. Previously all vehicles had pretty long respawn time making them a bit too rare.
+			Still requires a server restart for vehicles to show up in-game.
+			* [UPDATED] Destroyed low-end (boats, bicycles) vehicles now respawn after 3h.
+			* [UPDATED] Destroyed medium-end (normal cars, motorcycle, quads) vehicles respawn after 12h.
+			* [UPDATED] Destroyed high-end ( aircraft, all-terrain) vehicles respawn after 24h.
+			Note: Respawn rates are our recommended rule set, they may differ on some private hive servers.
 
 		Dogs:
 
