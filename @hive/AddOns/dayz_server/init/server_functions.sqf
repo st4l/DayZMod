@@ -153,6 +153,15 @@ server_getDiff2 =	{
 	_result
 };
 
+dayz_objectUID = {
+	private["_position","_dir","_key","_object"];
+	_object = _this;
+	_position = getPosATL _object;
+	_dir = direction _object;
+	_key = [_dir,_position] call dayz_objectUID2;
+    	_key
+};
+
 dayz_objectUID2 = {
 	private["_position","_dir","_key"];
 	_dir = _this select 0;
@@ -165,15 +174,6 @@ dayz_objectUID2 = {
 	} forEach _position;
 	_key = _key + str(round(_dir));
 	_key
-};
-
-dayz_objectUID = {
-	private["_position","_dir","_key","_object"];
-	_object = _this;
-	_position = getPosATL _object;
-	_dir = direction _object;
-	_key = [_dir,_position] call dayz_objectUID2;
-    	_key
 };
 
 dayz_recordLogin = {
