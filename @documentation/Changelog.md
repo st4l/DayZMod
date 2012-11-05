@@ -1,15 +1,15 @@
-### Update: TBD
+FIX : NOVEMBER 2012
 
 	Affected addons:
-		* dayz_code		1.7.3.*
+		* dayz_code		1.7.4
 
-	Developer's Note:
-		* 
+	Community Notes: 
+		* Current Changelog not final Changelog
 
 	Community Change log:
 		Client:
 			* [NEW]     class Mi17_Civilian Now Unbanned.
-			* [NEW]     S1203_ambulance_EP1 Now Unbanned.
+			* [NEW]     HMMWV_Ambulance_CZ_DES_EP1 Now Unbanned.
 			* [NEW]     UH60_wreck_EP1 Now Unbanned.
 			* [NEW]     An2_TK_EP1 Now Unbanned.
 			* [NEW]     UH60M_MEV_EP1 Now Unbanned.
@@ -22,10 +22,11 @@
 			* [UPDATED] Combat Logging "Fired Near" checks are now limited to 15 metre radius.
 			* [UPDATED] Corrected legs and hands fractures they must be set with actual value.
 
-			* [REMOVED] Damaged logging to .rpt.
-			* [REMOVED]     An2_1_TK_CIV_EP1 Now Banned.
-			* [REMOVED]     An2_2_TK_CIV_EP1 Now Banned.
-			* [REMOVED]     MV22 Now Banned.
+			* [REMOVED] 	Damaged logging to .rpt.
+			* [REMOVED]     An2_1_TK_CIV_EP1 Now ReBanned.
+			* [REMOVED]     An2_2_TK_CIV_EP1 Now ReBanned.
+			* [REMOVED]     MV22 Now ReBanned.
+			* [REMOVED]		S1203_ambulance_EP1 Now ReBanned.
 
 			* [Fixed]   Adding checks for female skin humanity/login.
 			* [Fixed]   Adding female skin to variables.
@@ -35,7 +36,7 @@
 			* [Fixed]   Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
 			* [Fixed]   Debug menu options to no longer show.
 			* [Fixed]   Locked Singleplayer Menu
-			
+
 		Upstream hive (public hive):
 			Adjusted the respawn rates of vehicles. Previously all vehicles had pretty long respawn time making them a bit too rare.
 			Still requires a server restart for vehicles to show up in-game.
@@ -69,7 +70,8 @@
 			Sometimes "loses" player and dosent follow again till player approches dog; sometimes a "Call Dog" fixes the issue.
 			Sometimes repeating sit/lay down animations when in waiting mode beside player; often occurs with the Fin model. Always occurs with more than one dog.		
 
-Dogs will be limited a great deal to start with as we need to see how they react in-game with you and the world.		
+Dogs will be limited a great deal to start with as we need to see how they react in-game with you and the world.
+		
 
 _____________________________________
 
