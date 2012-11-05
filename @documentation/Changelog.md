@@ -8,15 +8,12 @@
 
 	Community Change log:
 		Client:
-			* [NEW]     class Mi17_Civilian Now Unbanned.
+			* [NEW]     class Mi17_Civilian Now Unbanned. (1 Max per server)
 			* [NEW]     S1203_ambulance_EP1 Now Unbanned.
 			* [NEW]     UH60_wreck_EP1 Now Unbanned.
-			* [NEW]     An2_1_TK_CIV_EP1 Now Unbanned.
-			* [NEW]     An2_2_TK_CIV_EP1 Now Unbanned.
 			* [NEW]     An2_TK_EP1 Now Unbanned.
-			* [NEW]     UH60M_MEV_EP1 Now Unbanned.
-			* [NEW]     MV22 Now Unbanned.
-			* [NEW]     MH6J_EP1 Now Unbanned.
+			* [NEW]     UH60M_MEV_EP1 Now Unbanned. (1 Max per server)
+			* [NEW]     MH6J_EP1 Now Unbanned. (1 Max per server)
 			* [NEW]     BAF_Offroad_D Now Unbanned.
 			* [NEW]     Fully Removed Save button from action menu.
 			* [NEW]     New combat mode icon (G17) thanks Alexander.
@@ -25,7 +22,11 @@
 			* [UPDATED] Combat Logging "Fired Near" checks are now limited to 15 metre radius.
 			* [UPDATED] Corrected legs and hands fractures they must be set with actual value.
 
-			* [REMOVED] Damaged logging to .rpt.
+			* [REMOVED] 	Damaged logging to .rpt.
+			* [REMOVED]     An2_1_TK_CIV_EP1 Now Unbanned.
+			* [REMOVED]     An2_2_TK_CIV_EP1 Now Unbanned.
+			* [REMOVED]     MV22 Now Unbanned.
+
 
 			* [Fixed]   Adding checks for female skin humanity/login.
 			* [Fixed]   Adding female skin to variables.
@@ -35,7 +36,7 @@
 			* [Fixed]   Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
 			* [Fixed]   Debug menu options to no longer show.
 			* [Fixed]   Locked Singleplayer Menu
-
+			
 		Upstream hive (public hive):
 			Adjusted the respawn rates of vehicles. Previously all vehicles had pretty long respawn time making them a bit too rare.
 			Still requires a server restart for vehicles to show up in-game.
