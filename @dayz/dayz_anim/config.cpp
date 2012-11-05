@@ -1815,7 +1815,7 @@ class CfgVehicles {
 	class Ka52Black: Banned {};
 	class MQ9PredatorB: Banned {};
 	class MQ9PredatorB_campaign: Banned {};
-	class MV22: Banned {};
+	//class MV22: Banned {};
 	class Pchela1T: Banned {};
 	class Su25_CDF: Banned {};
 	class Su25_Ins: Banned {};
@@ -1923,7 +1923,7 @@ class CfgVehicles {
 	class AH64D_EP1: Banned {};
 	class AH6J_EP1: Banned {};
 	class AH6X_EP1: Banned {};
-	class MH6J_EP1: Banned {};
+	//class MH6J_EP1: Banned {};
 	//class An2_1_TK_CIV_EP1: Banned {};
 	//class An2_2_TK_CIV_EP1: Banned {};
 	//class An2_TK_EP1: Banned {};
@@ -1936,7 +1936,7 @@ class CfgVehicles {
 	class UH1H_TK_EP1: Banned {};
 	class UH1H_TK_GUE_EP1: Banned {};
 	class UH60M_EP1: Banned {};
-	class UH60M_MEV_EP1: Banned {};
+	//class UH60M_MEV_EP1: Banned {};
 	class Ka137_PMC: Banned {};
 	class Ka137_MG_PMC: Banned {};
 	class Ka60_GL_PMC: Banned {};

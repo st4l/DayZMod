@@ -180,6 +180,30 @@ class CfgVehicles {
 		gunnerCanSee = 2+16+32;
 		driverCanSee = 2+16+32;
 	};
+	//An2_1_TK_CIV_EP1
+	class An2_1_TK_CIV_EP1 {
+		radartype=0;
+	};
+	//An2_2_TK_CIV_EP1
+	class An2_2_TK_CIV_EP1 {
+		radartype=0;
+	};
+	//An2_1_TK_CIV_EP1
+	class An2_TK_EP1 {
+		radartype=0;
+	};
+	//MV22
+	class MV22 {
+		radartype=0;
+	};
+	//UH60M_MEV_EP1
+	class UH60M_MEV_EP1 {
+		radartype=0;
+	};
+	//MH6J_EP1
+	class MH6J_EP1 {
+		radartype=0;
+	};
 	class House {
 		class DestructionEffects;
 	};
