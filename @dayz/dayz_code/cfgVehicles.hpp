@@ -195,14 +195,20 @@ class CfgVehicles {
 	//MV22
 	class MV22 {
 		radartype=0;
+		weapons[] = {};
+		magazines[] = {};
 	};
 	//UH60M_MEV_EP1
 	class UH60M_MEV_EP1 {
 		radartype=0;
+		weapons[] = {};
+		magazines[] = {};
 	};
-	//MH6J_EP1
-	class MH6J_EP1 {
+	//AH6X_EP1
+	class AH6X_EP1 {
 		radartype=0;
+		weapons[] = {};
+		magazines[] = {};
 	};
 	class House {
 		class DestructionEffects;

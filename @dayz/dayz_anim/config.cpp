@@ -1922,8 +1922,8 @@ class CfgVehicles {
 	class Chukar_AllwaysEnemy_EP1: Banned {};
 	class AH64D_EP1: Banned {};
 	class AH6J_EP1: Banned {};
-	class AH6X_EP1: Banned {};
-	//class MH6J_EP1: Banned {};
+	//class AH6X_EP1: Banned {};
+	class MH6J_EP1: Banned {};
 	//class An2_1_TK_CIV_EP1: Banned {};
 	//class An2_2_TK_CIV_EP1: Banned {};
 	//class An2_TK_EP1: Banned {};
