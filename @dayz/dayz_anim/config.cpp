@@ -1757,7 +1757,7 @@ class CfgVehicles {
 	class HMMWV_DES_EP1: Banned {};
 	class HMMWV_MK19_DES_EP1: Banned {};
 	class HMMWV_Ambulance_DES_EP1: Banned {};
-	class HMMWV_Ambulance_CZ_DES_EP1: Banned {};
+	//class HMMWV_Ambulance_CZ_DES_EP1: Banned {};
 	class HMMWV_Avenger_DES_EP1: Banned {};
 	class MTVR_DES_EP1: Banned {};
 	class MtvrReammo_DES_EP1: Banned {};
@@ -1789,7 +1789,7 @@ class CfgVehicles {
 	class LandRover_SPG9_TK_INS_EP1: Banned {};
 	class LandRover_SPG9_TK_EP1: Banned {};
 	//class S1203_TK_CIV_EP1: Banned {};
-	//class S1203_ambulance_EP1: Banned {};
+	class S1203_ambulance_EP1: Banned {};
 	class MAZ_543_SCUD_TK_EP1: Banned {};
 	class M1126_ICV_M2_EP1: Banned {};
 	class M1126_ICV_mk19_EP1: Banned {};

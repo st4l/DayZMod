@@ -194,6 +194,22 @@ class CfgVehicles {
 		gunnerCanSee = 2+16+32;
 		driverCanSee = 2+16+32;
 	};
+	//HMMWV_Ambulance_CZ_DES_EP1 
+	class HMMWV_Ambulance_DZ: HMMWV_Ambulance_CZ_DES_EP1 
+	{
+		radartype = 0;
+		displayName = "HMMWV_Ambulance_DZ";
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenSelections[] = {};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		weapons[] = {};
+		magazines[] = {};
+		gunnerHasFlares = false;
+	};
 	//Mi17_Civilian
 	class Mi17_DZ: Mi17_Civilian 
 	{
