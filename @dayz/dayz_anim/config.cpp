@@ -1723,7 +1723,7 @@ class CfgVehicles {
 	class GAZ_Vodnik: Banned {};
 	class GAZ_Vodnik_MedEvac: Banned {};
 	class HMMWV_Armored: Banned {};
-	class HMMWV_Ambulance: Banned {};
+	//class HMMWV_Ambulance: Banned {};
 	class HMMWV_Avenger: Banned {};
 	class Kamaz: Banned {};
 	class KamazOpen: Banned {};
@@ -1757,7 +1757,7 @@ class CfgVehicles {
 	class HMMWV_DES_EP1: Banned {};
 	class HMMWV_MK19_DES_EP1: Banned {};
 	class HMMWV_Ambulance_DES_EP1: Banned {};
-	//class HMMWV_Ambulance_CZ_DES_EP1: Banned {};
+	class HMMWV_Ambulance_CZ_DES_EP1: Banned {};
 	class HMMWV_Avenger_DES_EP1: Banned {};
 	class MTVR_DES_EP1: Banned {};
 	class MtvrReammo_DES_EP1: Banned {};
