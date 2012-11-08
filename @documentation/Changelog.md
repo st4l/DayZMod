@@ -1,16 +1,6 @@
 FIX : NOVEMBER 2012
 
 	Affected addons:
-		* dayz_code		1.7.4
-
-	Community Notes: 
-		* Current Changelog not final Changelog
-
-	Community Change log:
-FIX : NOVEMBER 2012
-
-	Affected addons:
-		* dayz_code		1.7.4
 
 	Community Notes: 
 		* Current Changelog not final Changelog
@@ -36,6 +26,7 @@ FIX : NOVEMBER 2012
 			* [REMOVED]     An2_2_TK_CIV_EP1 Now ReBanned.
 			* [REMOVED]     MV22 Now ReBanned.
 			* [REMOVED]		S1203_ambulance_EP1 Now ReBanned.
+			* [REMOVED]     BAF_L85A2_RIS_CWS
 
 			* [Fixed]   Adding checks for female skin humanity/login.
 			* [Fixed]   Adding female skin to variables.
