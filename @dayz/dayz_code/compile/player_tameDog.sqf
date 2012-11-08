@@ -8,7 +8,7 @@ _pos = 		position _target;
 deleteVehicle (_this select 0);
 _dog = (group player) createUnit [format["DZ_%1", typeOf _target], _pos, [], 0, "FORM"];
 _dog disableAI "FSM";
-_fsmid = [_dog, (count units group _caller)] execFSM "\z\addons\dayz_code\system\dog_agent.fsm";
+_fsmid = [_dog, typeOf _target] execFSM "\z\addons\dayz_code\system\dog_agent.fsm";
 _fsmid setFSMVariable ["_handle", _fsmid];
 _target removeAction _id;
 
