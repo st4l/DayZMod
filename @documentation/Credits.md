@@ -1,17 +1,24 @@
 DayZ Community Developers
 -------
+Desinger
+* Dean 'Rocket' Hall
 
-Devs
+Communtiy Devs
 * Alby
 * Ander
-* Dean 'Rocket' Hall
-* f0rt (ashfor03)
 * Ayan4m1
-* Stapo
-* Venthos
+* f0rt (ashfor03)
 * R4Z0R49
 * Rajko
+* Stapo
+* Venthos
+
+Contributions By
+* Tansien
 * Pwnoz0r
+* Killzone_kid
+* VRShiva
+* Inch
 
 Art Work
 * Alexander (G17 incombat Icon)
@@ -22,14 +29,10 @@ Testers:
 * Facoptere
 * HumbleUk
 * IMF2000
-* Tansien
-* Killzone_kid
-* Stapo
 * Sumrak
 * TheLaughingMan
-* VRShiva
-
-
+* Cammo
+* Max
 
 Contributing
 ------------
