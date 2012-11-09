@@ -1,11 +1,11 @@
-/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Dog Agent">*/
+/*%FSM<COMPILE "D:\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Dog Agent">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-150.000000,-75.000000,-50.000000,-25.000000,0.000000,"init"};
 item1[] = {"idle_exceeded",4,218,0.000000,225.000000,100.000000,275.000000,0.000000,"idle" \n "exceeded"};
 item2[] = {"master_moved",4,218,-150.000000,300.000000,-50.000000,350.000000,0.000000,"master" \n "moved"};
 item3[] = {"Moving",2,250,-150.000000,375.000000,-50.000000,425.000000,0.000000,"Moving"};
-item4[] = {"close",4,218,-275.000000,300.000000,-175.000000,350.000000,0.000000,"close"};
+item4[] = {"close",4,4314,-275.000000,300.000000,-175.000000,350.000000,0.000000,"close"};
 item5[] = {"",7,210,-229.000000,246.000000,-221.000000,254.000000,0.000000,""};
 item6[] = {"Waiting",2,250,-150.000000,225.000000,-50.000000,275.000000,0.000000,"Waiting"};
 item7[] = {"preloaded",4,218,-150.000000,0.000000,-50.000000,50.000000,0.000000,"preloaded"};
@@ -83,7 +83,7 @@ item78[] = {"",7,210,-29.000000,246.000000,-21.000000,254.000000,0.000000,""};
 item79[] = {"",7,210,121.000000,446.000000,129.000000,454.000000,0.000000,""};
 item80[] = {"",7,210,121.000000,371.000000,129.000000,379.000000,0.000000,""};
 item81[] = {"",7,210,-29.000000,-404.000000,-21.000000,-396.000000,0.000000,""};
-item82[] = {"player_enter__ve",4,218,-150.000000,-425.000000,-50.000000,-375.000000,2.000000,"player enter " \n "vehicle"};
+item82[] = {"player_enter__ve",8,218,-150.000000,-425.000000,-50.000000,-375.000000,2.000000,"player enter " \n "vehicle"};
 item83[] = {"in_vehicle",2,250,-525.000000,-425.000000,-425.000000,-375.000000,0.000000,"in vehicle"};
 item84[] = {"player_exit__veh",4,218,-525.000000,-350.000000,-425.000000,-300.000000,0.000000,"player exit " \n "vehicle"};
 item85[] = {"",7,210,-228.999985,-454.000000,-221.000015,-446.000000,0.000000,""};
@@ -227,8 +227,8 @@ link124[] = {94,91};
 link125[] = {95,86};
 link126[] = {96,46};
 link127[] = {97,13};
-globals[] = {25.000000,1,0,0,0,640,480,1,258,6316128,1,-686.174683,1095.695435,824.455750,-833.648193,979,911,1};
-window[] = {2,-1,-1,-32000,-32000,1026,25,1233,25,3,997};
+globals[] = {25.000000,1,0,0,0,640,480,1,260,6316128,1,-727.852478,476.612427,472.387665,-270.819122,974,601,1};
+window[] = {2,-1,-1,-1,-1,824,44,1252,44,3,991};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -287,8 +287,7 @@ class FSM
     class Moving
     {
       name = "Moving";
-      init = /*%FSM<STATEINIT""">*/"" \n
-       "_pos = (vehicle player) modelToWorld [-1,1,0];" \n
+      init = /*%FSM<STATEINIT""">*/"_pos = (vehicle player) modelToWorld [-1,1,0];" \n
        "" \n
        "if(_lastPos distance _pos > 1 or _forceChange) then {" \n
        "	_lastPos = _pos;" \n
@@ -341,7 +340,7 @@ class FSM
           priority = 0.000000;
           to="Waiting";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"player distance _dog < 2"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(vehicle player) distance _dog < 5"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -354,7 +353,8 @@ class FSM
       name = "Waiting";
       init = /*%FSM<STATEINIT""">*/"_waitTime = time;" \n
        "_waiting = true;" \n
-       "_lastpos = player modelToWorld [-1,1,0];"/*%FSM</STATEINIT""">*/;
+       "_lastpos = player modelToWorld [-1,1,0];" \n
+       ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -374,7 +374,7 @@ class FSM
           priority = 2.000000;
           to="move_to_vehicle";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(vehicle _character != _character)"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(vehicle _character != _character);"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"diag_log ""PLAYER ENTERED VEHICLE"";"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -431,7 +431,7 @@ class FSM
           priority = 0.000000;
           to="Moving";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"player distance _dog > 2"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(vehicle player) distance _dog > 2"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_lastPos = position _dog;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -1156,7 +1156,7 @@ class FSM
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"(vehicle _character == _character)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"if (isNull _dog) then {" \n
-           "	_dog = (group player) createUnit [format[""DZ_%1"", _type], player modelToWorld [-1,1,0], [], 0, ""FORM""];" \n
+           "	_dog = (group player) createUnit [ _type, player modelToWorld [-1,1,0], [], 0, ""FORM""];" \n
            "	_dog disableAI ""FSM"";" \n
            "} ;" \n
            "" \n
@@ -1170,7 +1170,8 @@ class FSM
     class move_to_vehicle
     {
       name = "move_to_vehicle";
-      init = /*%FSM<STATEINIT""">*/"_dog doMove (getPos (vehicle player));" \n
+      init = /*%FSM<STATEINIT""">*/"_playerloc = getPos (vehicle player);" \n
+       "_dog doMove _playerloc;" \n
        "" \n
        "diag_log ""DOG MOVING TO VEHICLE"";" \n
        "_waitTime = time;"/*%FSM</STATEINIT""">*/;
@@ -1206,7 +1207,7 @@ class FSM
           priority = 0.000000;
           to="in_vehicle";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_dog distance (vehicle player) <= 5"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_dog distance (vehicle player) <= 8"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"diag_log ""DOG AT VEHICLE"";"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
