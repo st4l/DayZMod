@@ -16,7 +16,9 @@ _callCount = 0;
 while {(alive _projectile) && !(isNull _projectile) && _callCount < 85;} do {
 	_projectilespeed = Speed _projectile;
 	_projectflight = (((_projectilespeed / 60) * 1000));
-	sleep (12 / (_projectflight));
+	if (_projectflight > 0) then {
+		sleep (12 / (_projectflight));
+	};
 	if (alive _projectile && !(isNull _projectile)) then {_currentNear = (Position _projectile) nearEntities [["CAManBase","AllVehicles"],15];};
 	_listNear = _listNear + _currentNear;
 	_callCount = _callCount + 1;
