@@ -1,15 +1,24 @@
 DayZ Community Developers
 -------
 
-
-* AJ (Leadz)
-* Alakakala
-* Alexander (G17 incombat Icon)
+Devs
 * Alby
 * Ander
 * Dean 'Rocket' Hall
 * f0rt (ashfor03)
 * Ayan4m1
+* Stapo
+* Venthos
+* R4Z0R49
+* Rajko
+* Pwnoz0r
+
+Art Work
+* Alexander (G17 incombat Icon)
+
+Testers:
+* AJ (Leadz)
+* Alakakala
 * Facoptere
 * HumbleUk
 * IMF2000
@@ -17,12 +26,9 @@ DayZ Community Developers
 * Killzone_kid
 * Stapo
 * Sumrak
-* Pwnoz0r
-* R4Z0R49
-* Rajko
 * TheLaughingMan
 * VRShiva
-* Venthos
+
 
 
 Contributing
