@@ -1,6 +1,6 @@
 DayZ Community Developers
 -------
-Desinger
+Designer
 * Dean 'Rocket' Hall
 
 Communtiy Devs
