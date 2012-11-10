@@ -48,8 +48,26 @@ diag_log "HIVE: Starting";
 			_idKey = 	_x select 1;
 			_type =		_x select 2;
 			_ownerID = 	_x select 3;
-			_dir =		(_x select 4) select 0;
-			_pos =		(_x select 4) select 1;
+
+			_worldspace = _x select 4;
+			_dir = 0;
+			_pos = [0,0,0];
+			_wsDone = false;
+			if (count _worldspace >= 2) then
+			{
+				_dir = _worldspace select 0;
+				if (count (_worldspace select 1) == 3) then {
+					_pos = _worldspace select 1;
+					_wsDone = true;
+				}
+			};			
+			if (!_wsDone) then {
+				if (count _worldspace >= 1) then { _dir = _worldspace select 0; };
+				_pos = [getMarkerPos "center",0,4000,10,0,2000,0] call BIS_fnc_findSafePos;
+				if (count _pos < 3) then { _pos = [_pos select 0,_pos select 1,0]; };
+				diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
+			};
+
 			_intentory=	_x select 5;
 			_hitPoints=	_x select 6;
 			_fuel =		_x select 7;
