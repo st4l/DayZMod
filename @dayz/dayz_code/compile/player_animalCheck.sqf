@@ -4,7 +4,7 @@ _list = getposATL player nearEntities [["CAAnimalBase"],dayz_animalDistance];
 
 if (count _list < dayz_maxAnimals) then {
 	//Find where animal likes
-	_animalssupported = ["hen","Cow","Sheep","WildBoar","WildBoar","WildBoar","Goat","Rabbit","Rabbit","DZ_Fin","DZ_Pastor"];
+	_animalssupported = ["hen","Cow","Sheep","WildBoar","WildBoar","WildBoar","Goat","Rabbit","Rabbit"];
 	//_animalssupported = ["DZ_Fin","DZ_Pastor"];
 	_type =  (_animalssupported select floor(random(count _animalssupported)));
 	if (_type == "Cow") then {
@@ -34,9 +34,6 @@ if (count _list < dayz_maxAnimals) then {
 		_agent = createAgent [_type, _Pos, [], 0, "FORM"];
 		_agent setpos _Pos;
 		_id = [_pos,_agent] execFSM "\z\addons\dayz_code\system\animal_agent.fsm";
-		if ((_type == "DZ_Fin") || (_type == "DZ_Pastor")) then {
-			_tame = _agent addAction ["Tame Dog", "\z\addons\dayz_code\compile\player_tameDog.sqf"];
-		};
 	};
 	sleep 1;
 };

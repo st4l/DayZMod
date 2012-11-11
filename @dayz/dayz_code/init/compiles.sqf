@@ -46,7 +46,6 @@ if (!isDedicated) then {
 	player_alertZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_alertZombies.sqf";
 	player_fireMonitor = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\system\fire_monitor.sqf";
 	//player_combatLogged =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_combatLogged.sqf";
-	player_tameDog = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_tameDog.sqf";
 
 	//Objects
 	object_roadFlare = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_roadFlare.sqf";
