@@ -47,7 +47,7 @@ if (_unit == player) then {
 	if (_hit == "") then {
 		if ((_source != player) and _isPlayer) then {
 		//Enable aggressor Actions
-			if (_source isKindOf "CAManBase") {
+			if (_source isKindOf "CAManBase") then {
 				_source setVariable["startcombattimer",1];	
 			};
 			_canHitFree = 	player getVariable ["freeTarget",false];
