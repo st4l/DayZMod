@@ -1706,7 +1706,7 @@ class CfgVehicles {
 	class Mi17_medevac_Ins: Banned {};
 	class Mi17_medevac_CDF: Banned {};
 	class Mi17_medevac_RU: Banned {};
-	//class Mi17_Civilian: Banned {};
+	class Mi17_Civilian: Banned {};
 	class Fort_Nest_M240: Banned {};
 	class SeaFox_EP1: Banned {};
 	class SeaFox_AllwaysEnemy_EP1: Banned {};
@@ -1723,7 +1723,7 @@ class CfgVehicles {
 	class GAZ_Vodnik: Banned {};
 	class GAZ_Vodnik_MedEvac: Banned {};
 	class HMMWV_Armored: Banned {};
-	//class HMMWV_Ambulance: Banned {};
+	class HMMWV_Ambulance: Banned {};
 	class HMMWV_Avenger: Banned {};
 	class Kamaz: Banned {};
 	class KamazOpen: Banned {};
@@ -1824,7 +1824,7 @@ class CfgVehicles {
 	class UH1Y: Banned {};
 	class UH1Y_cutscene: Banned {};
 	class Su34: Banned {};
-	//class UH60_wreck_EP1: Banned {};
+	class UH60_wreck_EP1: Banned {};
 	class WarfareSalvageTruck_USMC: Banned {};
 	class WarfareSupplyTruck_USMC: Banned {};
 	class WarfareReammoTruck_USMC: Banned {};
@@ -1932,11 +1932,11 @@ class CfgVehicles {
 	class Mi17_UN_CDF_EP1: Banned {};
 	class Mi171Sh_rockets_CZ_EP1: Banned {};
 	class Mi171Sh_CZ_EP1: Banned {};
-	class Mi17_TK_EP1: Banned {};
+	//class Mi17_TK_EP1: Banned {};
 	class UH1H_TK_EP1: Banned {};
 	class UH1H_TK_GUE_EP1: Banned {};
 	class UH60M_EP1: Banned {};
-	//class UH60M_MEV_EP1: Banned {};
+	class UH60M_MEV_EP1: Banned {};
 	class Ka137_PMC: Banned {};
 	class Ka137_MG_PMC: Banned {};
 	class Ka60_GL_PMC: Banned {};
