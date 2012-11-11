@@ -45,6 +45,13 @@ if (_characterID == "0") exitWith {
 	diag_log ("ERROR: Cannot Sync Character " + (name _character) + " as no characterID");
 };
 
+private["_debug","_distance"];
+_debug = getMarkerpos "respawn_west";
+_distance = _debug distance _charPos;
+if (_distance < 2000) exitWith { 
+	diag_log format["ERROR: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3",name _character,_characterID,_charPos];
+};
+
 //Check for server initiated updates
 _isNewMed =		_character getVariable["medForceUpdate",false];		//Med Update is forced when a player receives some kind of med incident
 _isNewPos =		_character getVariable["posForceUpdate",false];		//Med Update is forced when a player receives some kind of med incident
