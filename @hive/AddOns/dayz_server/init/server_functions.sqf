@@ -17,6 +17,7 @@ local_createObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\comp
 server_playerSync =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSync.sqf";
 //zombie_initialize =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_initialize.sqf";
 zombie_findOwner =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_findOwner.sqf";
+player_combatLogged =         compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_combatLogged.sqf";
 
 server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
 

@@ -1,11 +1,18 @@
 /*
 
 */
-private["_hasDel","_serial","_object","_objects","_updates","_myGroup","_nearVeh"];
+private["_hasDel","_serial","_object","_objects","_updates","_myGroup","_nearVeh","_playerName","_center","_group"];
 _playerID = _this select 0;
 _playerName = _this select 1;
 _object = call compile format["player%1",_playerID];
 _characterID =	_object getVariable ["characterID","0"];
+_timeout = _object getVariable["combattimeout",0];
+
+// diag_log("COMBAT LOG CHECK: " + str(_timeout));
+
+if ((_timeout - time) > 0) then {
+	_playerName call player_combatLogged;
+};
 
 if (vehicle _object != _object) then {
 	_object action ["eject", vehicle _object];
