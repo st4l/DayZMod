@@ -12,10 +12,10 @@ Communtiy Devs
 * Rajko
 * Stapo
 * Venthos
+* Pwnoz0r
 
 Contributions By
 * Tansien
-* Pwnoz0r
 * Killzone_kid
 * VRShiva
 * Inch
