@@ -1,12 +1,17 @@
 /*
 
 */
-private["_hasDel","_serial","_object","_objects","_updates","_myGroup","_nearVeh","_playerName","_center","_group"];
+private ["_object","_myGroup","_id","_playerID","_playerName","_characterID","_playerIDtoarray","_timeout"];
 _playerID = _this select 0;
 _playerName = _this select 1;
 _object = call compile format["player%1",_playerID];
 _characterID =	_object getVariable ["characterID","0"];
 _timeout = _object getVariable["combattimeout",0];
+
+_playerIDtoarray = [];
+_playerIDtoarray = toArray _playerID;
+
+if (59 in _playerIDtoarray) exitWith {};
 
 // diag_log("COMBAT LOG CHECK: " + str(_timeout));
 

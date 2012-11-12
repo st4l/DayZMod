@@ -1,4 +1,4 @@
-private["_characterID","_minutes","_newObject","_playerID","_playerName","_playerID","_myGroup","_group"];
+private ["_characterID","_minutes","_newObject","_playerID","_key"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 _characterID = 	_this select 0;
 _minutes =		_this select 1;
@@ -18,7 +18,7 @@ diag_log ("DW_DEBUG: _newObject: " + str(_newObject));
 
 if !(isnil "_characterID") then {
 	
-if (_characterID != "0") then {
+if (_characterID != 0) then {
 	_key = format["CHILD:202:%1:%2:",_characterID,_minutes];
 	//diag_log ("HIVE: WRITE: "+ str(_key));
 	_key call server_hiveWrite;

@@ -1,7 +1,7 @@
 /*
 [_object,_type] spawn server_updateObject;
 */
-private["_object","_type","_objectID","_uid","_lastUpdate","_needUpdate"];
+private ["_object","_type","_objectID","_uid","_lastUpdate","_needUpdate","_object_position","_object_inventory","_object_damage"];
 
 _object = 	_this select 0;
 _type = 	_this select 1;
