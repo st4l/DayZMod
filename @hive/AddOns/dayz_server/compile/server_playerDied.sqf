@@ -16,6 +16,9 @@ diag_log ("DW_DEBUG: _newObject: " + str(_newObject));
 	};
 */
 
+_characterID = parseNumber _characterID;
+_minutes = parseNumber "_minutes";
+
 if !(isnil "_characterID") then {
 	
 if (_characterID != 0) then {
