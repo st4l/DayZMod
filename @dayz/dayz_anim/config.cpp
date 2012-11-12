@@ -1932,7 +1932,7 @@ class CfgVehicles {
 	class Mi17_UN_CDF_EP1: Banned {};
 	class Mi171Sh_rockets_CZ_EP1: Banned {};
 	class Mi171Sh_CZ_EP1: Banned {};
-	//class Mi17_TK_EP1: Banned {};
+	class Mi17_TK_EP1: Banned {};
 	class UH1H_TK_EP1: Banned {};
 	class UH1H_TK_GUE_EP1: Banned {};
 	class UH60M_EP1: Banned {};

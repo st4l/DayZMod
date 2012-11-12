@@ -1,4 +1,19 @@
 class CfgVehicles {
+	class AllVehicles;
+	class Air : AllVehicles 
+	{
+	class NewTurret;
+	};
+	class Helicopter : Air 
+	{
+		class Turrets
+        {
+            class MainTurret: NewTurret
+            {
+                class Turrets;
+            };
+        };
+	};
 	class Animal;
 	class Pastor;
 	class Fin;
@@ -194,68 +209,78 @@ class CfgVehicles {
 		gunnerCanSee = 2+16+32;
 		driverCanSee = 2+16+32;
 	};
-	//Mi17_TK_EP1
-	class Mi17_TK_EP1
+
+	class Mi17_base : Helicopter 
+	{
+		class Turrets: Turrets
 		{
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		hiddenSelections[] = {};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		weapons[] = {};
-		magazines[] = {};
-		gunnerHasFlares = false;
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
+			class MainTurret: MainTurret
+			{
+				minElev = -80;
+				maxElev = 25;
+				initElev = -80;
+				minTurn = 30;
+				maxTurn = 150;
+				initTurn = 90;
+				class ViewOptics {
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.7;
+					minFov = 0.25;
+					maxFov = 1.1;
+				};
+				class Turrets: Turrets {};
+			};
+			class BackTurret : MainTurret
+			{
+				minElev = -80;
+				maxElev = 25;
+				initElev = -80;
+				minTurn = -185;
+				maxTurn = -45;
+				initTurn = -155;
+				class ViewOptics {
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.7;
+					minFov = 0.25;
+					maxFov = 1.1;
+				};
+				class Turrets: Turrets {};
+			};
+		};
 	};
-	class Mi17_DZ: Mi17_TK_EP1
+	class Mi17_DZ: Mi17_base	
 	{
 		displayName = "Mi17_DZ";
-	};
-	//An2_TK_EP1
-	class An2_TK_EP1 
-	{
 		scope = 2;
 		side = 2;
 		crew = "";
+		maxSpeed = 180;	// max speed on level road, km/h
 		typicalCargo[] = {};
-		hiddenSelections[] = {};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		weapons[] = {};
-		magazines[] = {};
+		hiddenSelectionsTextures[] = {"\ca\air_E\Data\mi17_body_IND_CO.paa", "\ca\air_E\Data\mi17_det_IND_CO.paa", "\ca\air\data\clear_empty.paa", "\ca\air\data\mi8_decals_ca.paa"};
+		class Turrets : Turrets {
+			class FrontTurret : MainTurret {
+				weapons[] = {PKT_2};
+				magazines[] = {"100Rnd_762x54_PK"};
+			};
+			class BackTurret : BackTurret {
+				weapons[] = {PKT_2};
+				magazines[] = {"100Rnd_762x54_PK"};
+			};
+		};
 		gunnerHasFlares = false;
 		commanderCanSee = 2+16+32;
 		gunnerCanSee = 2+16+32;
 		driverCanSee = 2+16+32;
-	};
-	class AN2_DZ: An2_TK_EP1
-	{
-		displayName = "AN2_DZ";
-	};
-	//AH6X_EP1
-	class AH6X_EP1
-	{
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		hiddenSelections[] = {};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		weapons[] = {};
-		magazines[] = {};
-		gunnerHasFlares = false;
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-	};
-	class AH6X_DZ: AH6X_EP1
-	{
-		displayName = "AH6X_DZ";
 	};
 	class House {
 		class DestructionEffects;
