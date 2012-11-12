@@ -20,8 +20,6 @@ zombie_findOwner =			compile preprocessFileLineNumbers "\z\addons\dayz_server\co
 player_combatLogged =         compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_combatLogged.sqf";
 
 server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
-fnc_buildWeightedArray =   compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_buildWeightedArray.sqf";
-onPlayerDisconnected     { [_uid,_name] call server_onPlayerDisconnect; };
 
 vehicle_handleInteract = {
 	private["_object"];
