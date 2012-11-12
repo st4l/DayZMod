@@ -13,9 +13,8 @@ _playerIDtoarray = toArray _playerID;
 
 if (59 in _playerIDtoarray) exitWith {};
 
-// diag_log("COMBAT LOG CHECK: " + str(_timeout));
-
 if ((_timeout - time) > 0) then {
+	diag_log("DEBUG: COMBAT LOG TIMER: " + str(_timeout));
 	_playerName call player_combatLogged;
 };
 
