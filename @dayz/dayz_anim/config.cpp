@@ -995,7 +995,7 @@ class CfgWeapons {
 	//class huntingrifle: FakeWeapon {};
 	class RPG18: FakeWeapon {};
 	class SMAW: FakeWeapon {};
-	class PKT_2: FakeWeapon {};
+	//class PKT_2: FakeWeapon {};
 	class PKT_3: FakeWeapon {};
 	class SidewinderLaucher_AH64: FakeWeapon {};
 	class M230: FakeWeapon {};
